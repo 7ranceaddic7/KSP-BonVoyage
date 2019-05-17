@@ -53,7 +53,7 @@ namespace BonVoyage
 
             AddChild(new DialogGUIHorizontalLayout(
                 new DialogGUIFlexibleSpace(),
-                new DialogGUIButton(Localizer.Format("#LOC_BV_Control_Check"), model.SystemCheckButtonClicked, model.EnableButtons, 120f, CommonWindowProperties.buttonHeight, false),
+                TooltipExtension.DeferTooltip(new DialogGUIButton(Localizer.Format("#LOC_BV_Control_Check"), model.SystemCheckButtonClicked, model.EnableButtons, 120f, CommonWindowProperties.buttonHeight, false) { tooltipText = Localizer.Format("#LOC_BV_Control_Check_Tooltip") }),
                 new DialogGUIFlexibleSpace()
             ));
 

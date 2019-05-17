@@ -2,6 +2,47 @@
 Automagic Industries brings you a new autopilot, which reduces driving accidents by 100%.
 
 # Changelog
+## 0.14.4
+- Recompile for KSP 1.7
+
+
+## 0.14.3 - Power of LOx
+### Changes
+- Fuel cells support
+- Added Reload button to the main window to refresh list of vessels without scene switch
+
+
+## 0.14.2
+### Changes
+- Unmanned rover must have an active connection to set a target or issue the GO command if you are using the CommNet or RemoteTech
+- Batteries can be used during a night, if there is enough solar power to recharge them. Up to 50% of the total capacity of all enabled batteries will be used.
+- Added toggle to the Settings to disable rotation of a rover perpendicularly to the terrain after arriving to a target and during a ride
+- Added Rotation vector advanced tweakable
+  - Rotation of a rover depends on the orientation of the root part. You can now set the vector used for rotating the rover.
+  - This setting is accessible after enabling Advanced tweakables in the KSP settings
+  - Default value is "Back" - for rovers, whose root part is a probe or a cab oriented in such a way, that you see horizont line on the navball
+  - Other usual values are "Up" and "Down", if the default setting is putting your rover on it's (usually) shorter side. You need experiment a little bit in this case to find the right setting.
+
+
+## 0.14.1.1
+### Fixes
+- Fixed detection of KSP Interstellar Extended generators
+
+### Changes
+- Kopernicus support - solar panels are working even when you are around other stars
+- Added support for Bison Cab from Wild Blue Industries
+- Bon Voyage will try to rotate a rover perpendicularly to a terrain
+
+
+## 0.14.0.1
+### Fixes
+- Fixed rover skipping kilometers forward to the target under some circumstances
+- Removed forgotten harmless debug warning message
+
+### Changes
+- Added tooltip to the *System check* button to better explain it's function
+
+
 ## 0.14.0 - New voyage
 ### Changes
 - KSP 1.5.1 compatibility
@@ -12,10 +53,13 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
   - Maximum speed is taken from maxDrivenSpeed field, which is scaled by gear setting, and capped at max safe speed
 - Direct input of target coordinates
 - Stabilization of a rover during scene switching into flight, if it's moving or just arrived at a destination. The function is switched off, if World Stabilizer or BD Armory is present.
+- Added MiniAVC
+
 
 ## 0.13.3
 ### Changes
 - Recompile for KSP 1.4.1
+
 
 ## 0.13.2
 ### Changes
@@ -25,6 +69,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 
 ### Fixes
 - Various fixes
+
 
 ## 0.13.1
 ### Changes
@@ -36,6 +81,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Fixed drawing of the line to a target
 - Fixed wrong path to images on Linux
 - Various fixes
+
 
 ## 0.13.0
 ### Fixes
@@ -51,6 +97,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Hide BV window in map view
 - Average speed change - reduction based on power
 - Shutdown/Activate BV Controller
+
 
 ## 0.12.0
 ### Fixes
@@ -72,10 +119,12 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Show route only for active rover
 - Interstellar reactors support
 
+
 ## 0.11.1
 - Fixes for KSP 1.2.2
 - Added "Close" button to main window
 - Toolbar button won't appear in editors
+
 
 ## 0.11.0
 - New part, created by [Enceos](http://forum.kerbalspaceprogram.com/index.php?/profile/110725-enceos/)
@@ -102,9 +151,11 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Added support for USI nuclear reactors
 - Added support for NFE fission reactors
 
+
 ## 0.10.2
 - Recompile for KSP 1.2
 - Fixed last waypoint being last step of voyage
+
 
 ## 0.10.1
 - Fixed control lock being applied to next switched vessel
@@ -119,6 +170,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Fixed error switching to rover from Space Center
 - Added ARES and Puma support
 
+
 ## 0.10.0
 - Fixed BV controller part being not in Control tab
 - Shut down wheels are not treated as power consumers
@@ -129,6 +181,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Average speed now varies according to number of wheels on: 2 wheels - 50% of wheels' max speed, 4 wheels - 60%, 6 and more - 70%
 - Rovers driven away from KSC by BV are not treated as landed at runway or launchpad anymore
 
+
 ## 0.9.9.10
 - Fixed errors in editor
 - Fixed rover altitude being incorrect
@@ -138,6 +191,7 @@ Automagic Industries brings you a new autopilot, which reduces driving accidents
 - Interface revamp
 - Module Manager patch to add BonVoyage to Malemute, Karibou and Buffalo cabs
 - Fixed version file
+
 
 ## 0.9.9.9
 - Initial public release

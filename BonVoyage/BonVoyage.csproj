@@ -36,22 +36,25 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Kerbal Space Program 1.5.1\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Kerbal Space Program 1.7\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Kerbal Space Program 1.5.1\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\Kerbal Space Program 1.7\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Kerbal Space Program 1.5.1\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Kerbal Space Program 1.7\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Batteries.cs" />
     <Compile Include="BonVoyage.cs" />
     <Compile Include="BonVoyageModule.cs" />
+    <Compile Include="BonVoyageScenario.cs" />
     <Compile Include="BVController.cs" />
+    <Compile Include="Converter.cs" />
     <Compile Include="GUI\CommonWindowProperties.cs" />
     <Compile Include="GUI\ControlWindowModel.cs" />
     <Compile Include="GUI\ControlWindowView.cs" />
@@ -70,6 +73,8 @@
     <Compile Include="ShipController.cs" />
     <Compile Include="Tools\Configuration.cs" />
     <Compile Include="Tools\GeoUtils.cs" />
+    <Compile Include="Tools\KopernicusWrapper.cs" />
+    <Compile Include="Tools\RemoteTechWrapper.cs" />
     <Compile Include="Tools\StabilizeVessel.cs" />
     <Compile Include="Tools\ToolbarWrapper.cs" />
     <Compile Include="Tools\Tools.cs" />
